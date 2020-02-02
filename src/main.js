@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
+import UserList from "./pages/UserList";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,10 @@ const routes = [
 	{
 		path: '/login',
 		component: Login
+	},
+	{
+		path: '/users/:id?',
+		component: UserList
 	}
 ]
 
