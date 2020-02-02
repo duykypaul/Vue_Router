@@ -6,7 +6,7 @@ import './plugins'
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {path: '/', component: Home},
@@ -14,7 +14,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-	routes // short for `routes: routes`
+	mode: 'history',
+	routes
 });
 
 new Vue({
