@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
 import UserList from "./pages/UserList";
+import NotFound from "./pages/NotFound";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,10 @@ const routes = [
 	{
 		path: '/users/:id?',
 		component: UserList
+	},
+	{
+		path: '*',
+		component: NotFound
 	}
 ]
 
