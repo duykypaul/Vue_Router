@@ -11,7 +11,7 @@ import UserList from "./pages/UserList";
 import NotFound from "./pages/NotFound";
 
 Vue.use(VueRouter);
-let isLogin = false;
+let isLogin = true;
 const routes = [
 	{
 		path: '/',
