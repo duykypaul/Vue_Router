@@ -1,9 +1,6 @@
 <template>
 	<div id="app">
 		<comp-menu/>
-		<comp-slider/>
-		<!-- route outlet -->
-		<!-- component matched by the route will render here -->
 		<router-view></router-view>
 	</div>
 </template>

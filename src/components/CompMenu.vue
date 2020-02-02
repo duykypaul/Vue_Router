@@ -9,6 +9,7 @@
 				<b-navbar-nav>
 					<router-link to="/" tag="b-nav-item" exactActiveClass="active" >Home</router-link>
 					<router-link to="/about-us" tag="b-nav-item" exactActiveClass="active">About Us</router-link>
+					<router-link to="/login" tag="b-nav-item" exactActiveClass="active">Login</router-link>
 					<b-nav-item href="#" disabled>Disabled</b-nav-item>
 				</b-navbar-nav>
 				
