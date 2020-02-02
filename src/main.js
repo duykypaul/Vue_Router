@@ -11,7 +11,7 @@ import UserList from "./pages/UserList";
 import NotFound from "./pages/NotFound";
 
 Vue.use(VueRouter);
-
+let isLogin = false;
 const routes = [
 	{
 		path: '/',
@@ -27,7 +27,14 @@ const routes = [
 	},
 	{
 		path: '/users/:id?',
-		component: UserList
+		component: UserList,
+		beforeEnter: (to, from, next) => {
+			if(isLogin){
+				next();
+			} else {
+				next({path: '/login', query: {redirect: 'user'}})
+			}
+		}
 	},
 	{
 		path: '*',
